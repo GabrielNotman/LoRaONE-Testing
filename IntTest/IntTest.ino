@@ -7,7 +7,7 @@
 // BUTTON, GPS_TIMEPULSE, ACCEL_INT1, 
 // ACCEL_INT2, SWITCH_SENSE
 
-#define TEST_PIN SWITCH_SENSE
+#define TEST_PIN 13
 #define DEBOUNCE_MS 200
 #define CONSOLE_SERIAL SerialUSB
 
@@ -25,7 +25,7 @@ void setup()
   
   // Test to see if these operations interfere
   SPI.begin();
-  Serial.begin(9600);
+  //Serial.begin(9600);
 }
 
 void loop() 

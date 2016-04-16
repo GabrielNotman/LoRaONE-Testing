@@ -13,6 +13,10 @@ uint8_t intensity = 0;
 
 void setup() 
 {
+  // To test ENABLE_PIN_IO
+  pinMode(ENABLE_PIN_IO, OUTPUT);
+  digitalWrite(ENABLE_PIN_IO, HIGH);
+
   delay(5000);
   
   pinMode(TEST_PIN, OUTPUT);
