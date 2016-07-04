@@ -86,6 +86,12 @@ void loop()
   CONSOLE_SERIAL.print("Reading from register: 0x" + String(0x35, HEX));
   CONSOLE_SERIAL.println(", response: 0x" + String(readReg(0x35), BIN));
 
+  int16_t x_val = (readReg(0x29) << 8) | readReg(0x28);
+  int16_t y_val = (readReg(0x2B) << 8) | readReg(0x2A);
+  int16_t z_val = (readReg(0x2D) << 8) | readReg(0x2C);
+
+  CONSOLE_SERIAL.println(String("Accelerometer Readings: ") + x_val + ", " + y_val + ", " + z_val);
+ 
   for (int i=0; i<1000; i++) {
     delayMicroseconds(1000);
   }
