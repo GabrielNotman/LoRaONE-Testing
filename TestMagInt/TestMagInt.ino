@@ -5,7 +5,6 @@
 #define CONSOLE_SERIAL SerialUSB
 
 #define ACCEL_ADR 0b0011110
-#define TEST_REG 0x0F
 
 #define TEST_INT1
 //#define TEST_INT2
