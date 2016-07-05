@@ -1,4 +1,4 @@
-// Accel Test
+// Magnetometer Test
 
 #include <Wire.h>
 

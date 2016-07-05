@@ -1,4 +1,4 @@
-// Magnetometer Test
+// Magnetometer Interrupt Test
 
 #include <Wire.h>
 
@@ -77,7 +77,6 @@ void setup()
 void loop()
 {
    if (int1_flag) {
-    readReg(0x13);
     int1_flag = false;
     CONSOLE_SERIAL.println("INT1 Interrupt");
   }
