@@ -3,11 +3,12 @@
 #include <SPI.h>
 
 // Options for TEST_PIN:
-// D0 - D13 (or A0-A13)
+// D0 - D11 (or A0-A11)
 // BUTTON, GPS_TIMEPULSE, ACCEL_INT1, 
 // ACCEL_INT2, SWITCH_SENSE
 
-#define TEST_PIN 13
+#define TEST_PIN 11
+
 #define DEBOUNCE_MS 200
 #define CONSOLE_SERIAL SerialUSB
 
@@ -24,7 +25,7 @@ void setup()
   CONSOLE_SERIAL.println(String("Testing the interrupt on pin: ") + TEST_PIN);
   
   // Test to see if these operations interfere
-  SPI.begin();
+  //SPI.begin();
   //Serial.begin(9600);
 }
 

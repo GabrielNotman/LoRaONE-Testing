@@ -2,7 +2,7 @@
 
 #include <SPI.h>
 
-#define NUM_PINS 14
+#define NUM_PINS 12
 #define NUM_TOGGLES 5
 #define CONSOLE_SERIAL SerialUSB
 
